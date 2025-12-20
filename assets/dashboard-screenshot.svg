@@ -1,0 +1,85 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect width="1200" height="60" fill="#7c3aed"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">Oracle Performance Analyzer</text>
+  <text x="1000" y="40" font-family="Arial, sans-serif" font-size="14" fill="white">Real-time Monitoring</text>
+  
+  <!-- Performance Metrics -->
+  <rect x="20" y="80" width="1160" height="200" fill="#ffffff" stroke="#e0e0e0" rx="4"/>
+  <text x="40" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#7c3aed">Performance Metrics</text>
+  
+  <!-- CPU Usage Chart -->
+  <rect x="40" y="130" width="350" height="130" fill="#faf5ff" stroke="#7c3aed" rx="4"/>
+  <text x="50" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">CPU Usage</text>
+  <rect x="50" y="165" width="330" height="20" fill="#e9d5ff" rx="2"/>
+  <rect x="50" y="165" width="214" height="20" fill="#7c3aed" rx="2"/>
+  <text x="290" y="180" font-family="Arial, sans-serif" font-size="12" fill="#7c3aed">65%</text>
+  
+  <!-- Memory Usage Chart -->
+  <rect x="410" y="130" width="350" height="130" fill="#f0fdf4" stroke="#16a34a" rx="4"/>
+  <text x="420" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a34a">Memory Usage</text>
+  <rect x="420" y="165" width="330" height="20" fill="#dcfce7" rx="2"/>
+  <rect x="420" y="165" width="198" height="20" fill="#16a34a" rx="2"/>
+  <text x="660" y="180" font-family="Arial, sans-serif" font-size="12" fill="#16a34a">60%</text>
+  
+  <!-- I/O Wait Chart -->
+  <rect x="780" y="130" width="350" height="130" fill="#fef2f2" stroke="#dc2626" rx="4"/>
+  <text x="790" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">I/O Wait</text>
+  <rect x="790" y="165" width="330" height="20" fill="#fee2e2" rx="2"/>
+  <rect x="790" y="165" width="99" height="20" fill="#dc2626" rx="2"/>
+  <text x="1030" y="180" font-family="Arial, sans-serif" font-size="12" fill="#dc2626">30%</text>
+  
+  <!-- Top Slow Queries -->
+  <rect x="20" y="300" width="1160" height="250" fill="#ffffff" stroke="#e0e0e0" rx="4"/>
+  <text x="40" y="330" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#7c3aed">Top Slow Queries</text>
+  
+  <!-- Query 1 -->
+  <rect x="40" y="350" width="1120" height="70" fill="#faf5ff" stroke="#7c3aed" rx="4"/>
+  <text x="60" y="375" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">SELECT * FROM orders WHERE customer_id = ?</text>
+  <text x="60" y="395" font-family="Arial, sans-serif" font-size="12" fill="#666">Average execution time: 2.5s | Executions: 1,234/hour</text>
+  <text x="60" y="410" font-family="Arial, sans-serif" font-size="12" fill="#059669">💡 Recommendation: Add index on customer_id column</text>
+  <text x="60" y="425" font-family="Arial, sans-serif" font-size="11" fill="#059669">Potential improvement: 95% faster (0.12s)</text>
+  
+  <!-- Query 2 -->
+  <rect x="40" y="430" width="1120" height="70" fill="#faf5ff" stroke="#7c3aed" rx="4"/>
+  <text x="60" y="455" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">SELECT COUNT(*) FROM transactions</text>
+  <text x="60" y="475" font-family="Arial, sans-serif" font-size="12" fill="#666">Average execution time: 1.8s | Executions: 567/hour</text>
+  <text x="60" y="490" font-family="Arial, sans-serif" font-size="12" fill="#059669">💡 Recommendation: Use materialized view with refresh</text>
+  <text x="60" y="505" font-family="Arial, sans-serif" font-size="11" fill="#059669">Potential improvement: 80% faster (0.36s)</text>
+  
+  <!-- Query 3 -->
+  <rect x="40" y="510" width="1120" height="70" fill="#faf5ff" stroke="#7c3aed" rx="4"/>
+  <text x="60" y="535" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">UPDATE products SET price = ? WHERE id = ?</text>
+  <text x="60" y="555" font-family="Arial, sans-serif" font-size="12" fill="#666">Average execution time: 0.9s | Executions: 890/hour</text>
+  <text x="60" y="570" font-family="Arial, sans-serif" font-size="12" fill="#059669">💡 Recommendation: Optimize transaction isolation level</text>
+  <text x="60" y="585" font-family="Arial, sans-serif" font-size="11" fill="#059669">Potential improvement: 50% faster (0.45s)</text>
+  
+  <!-- AI Recommendations -->
+  <rect x="20" y="570" width="560" height="200" fill="#ffffff" stroke="#e0e0e0" rx="4"/>
+  <text x="40" y="600" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#7c3aed">AI Recommendations</text>
+  
+  <rect x="40" y="620" width="520" height="50" fill="#f0fdf4" stroke="#16a34a" rx="4"/>
+  <text x="60" y="640" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#16a34a">Add 3 Missing Indexes</text>
+  <text x="60" y="660" font-family="Arial, sans-serif" font-size="12" fill="#666">Save 40% query time | Impact: High</text>
+  
+  <rect x="40" y="680" width="520" height="50" fill="#f0fdf4" stroke="#16a34a" rx="4"/>
+  <text x="60" y="700" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#16a34a">Optimize 5 Queries</text>
+  <text x="60" y="720" font-family="Arial, sans-serif" font-size="12" fill="#666">Save 25% CPU usage | Impact: Medium</text>
+  
+  <!-- Capacity Planning -->
+  <rect x="600" y="570" width="580" height="200" fill="#ffffff" stroke="#e0e0e0" rx="4"/>
+  <text x="620" y="600" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#7c3aed">Capacity Planning</text>
+  
+  <text x="620" y="630" font-family="Arial, sans-serif" font-size="14" fill="#111">Current CPU Usage: 65%</text>
+  <text x="620" y="655" font-family="Arial, sans-serif" font-size="14" fill="#111">Projected Usage (6 months): 85%</text>
+  <text x="620" y="680" font-family="Arial, sans-serif" font-size="14" fill="#dc2626" font-weight="bold">⚠️ Recommendation: Scale up before Q3</text>
+  
+  <rect x="620" y="700" width="540" height="20" fill="#fee2e2" rx="2"/>
+  <rect x="620" y="700" width="459" height="20" fill="#dc2626" rx="2"/>
+  <text x="620" y="715" font-family="Arial, sans-serif" font-size="11" fill="#666">Current: 65%</text>
+  <text x="1000" y="715" font-family="Arial, sans-serif" font-size="11" fill="#666">Projected: 85%</text>
+</svg>
+
